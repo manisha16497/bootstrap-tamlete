@@ -1,0 +1,150 @@
+@charset "utf-8";
+	.test{
+		  border:1px solid red;
+	}
+	
+	.top-menu{
+		      background-color:white;
+		      box-shadow:0px 8px 8px 0px #ddd;
+		      padding:5px;
+	}
+
+	.nav-link{
+            font-family: 'Acme', sans-serif;
+		    color:#114378;
+		    font-size:20px;
+	}
+
+	.nav-link:hover{
+		            color:deeppink;
+	}
+
+.desktop-menu, .mobile-menu{
+	                      display:none;
+}
+
+.title{
+	   font-size:30px;
+	   margin-top:40px;
+	   margin-bottom:20px;
+       font-family: 'Acme', sans-serif;
+       color:#00366F;
+
+}
+
+.about-title, .about-title-def{
+	         font-size:18px;
+	         padding:0;
+	         font-family: 'Rajdhani', sans-serif;
+	         line-height:20px;
+	     }
+.title-con{
+	         margin-bottom:20px;
+
+}
+
+.about-feature{
+	           margin-top:40px;
+}
+
+.about-feature h5{
+	              font-weight:bold;
+}
+
+.icon{
+	 width:80px;
+	 height:80px;
+	 font-size:35px;
+	 background-color:#007BFF;
+	 text-align:center;
+	 color:white;
+	 padding-top:20px;
+	 border-radius:50px; 
+}
+
+
+.icon-col{
+			     padding:5px;
+}
+
+.about-pic{
+	       margin-top:50px;
+}
+
+.about2-heading h5{
+ 		       padding:0;
+	         font-family: 'Rajdhani', sans-serif;
+	         margin:10px;
+	         font-weight:bold;
+	         text-align:justify;
+	         
+	     }
+.about2-des{
+	       font-size:18px;
+	         padding:10;
+	         font-family: 'Rajdhani', sans-serif;
+	         line-height:25px;
+	         margin-top:20px;
+	         text-align:justify;
+	     }
+
+
+.footer{
+	    background-color:#033264 !important;
+	    color:white;
+        font-family: 'Rajdhani', sans-serif;
+        text-align:justify;
+
+    }
+
+.footer h5{
+	       font-weight:bold;
+	     }    
+
+.footer i {
+	       width:35px;
+	       height:35px;
+	       padding:8px;
+	       background-color:#167FF0;
+	       color:white;
+	       border-radius:50%;
+	       font-size:20px;
+	       text-align:center;
+	       margin-left:10px;
+	      }	
+
+	      .footer p{
+	      	        font-size:14px;
+	      	        margin-top:20px;
+	      	    }
+.footer .link
+	      {
+           line-height: 40px;
+	      }
+
+.footer .input{
+	          width:170px;
+	          background:white;
+	          border:none;
+	          padding:3px 0px;
+	          margin-top:60px;
+       }
+
+.footer .sub{
+	         border:none;
+	         background-color: #167FF0;
+	         padding: 3px 8px;
+	         color:white;
+	         margin-top:60px;
+
+}    
+
+.footer-to{
+	       background-color:#0C3E73;
+	       padding: 15px 0px;
+	       margin-top:-35px;
+	       text-align: center;
+	       color:white;
+	       font-family: 'Rajdhani', sans-serif;
+
+}   	           

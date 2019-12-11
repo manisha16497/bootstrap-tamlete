@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>First Templete</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</head>
+<body>
+  <div class="container-fluid top-menu">
+<div class="container">
+  <div class="row">
+    <div class="col-3" style="padding:15px;">
+      <img src="images/logo.png" width="162" alt="logo">
+    </div>
+    <div class="col-9">
+      <!--start desktop menu-->
+     <ul class="nav justify-content-end desktop-menu">
+      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Srvices</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us</a>
+     <div class="dropdown-menu">
+      <a href="#" class="dropdown-item">Website</a>
+      <a href="#" class="dropdown-item">Email</a>
+      <a href="#" class="dropdown-item">Number</a>
+     </div>
+      </li>
+     </ul> 
+      <!--end desktop menu-->
+
+      <!--start mobile menu-->
+      <ul class="nav justify-content-end mobile-menu">
+        <li><a href="#" class="fa fa-bars" style="font-size:30px;"></a>
+
+        </li>
+      </ul>
+
+      <!--end mobile menu-->
+    </div>
+  </div>
+</div>
+</div>
+      <!--start data filter-->
+      <div class="jumbotron filter-box">
+        <center>
+        <div class="btn-group">
+        <button type="button" class="btn" data-filter="all">All</button>
+        <button type="button" class="btn" data-filter="free">Free</button>
+        <button type="button" class="btn" data-filter="paid">Paid</button>
+      </div>
+    </center>
+    <div class="container">
+      <div class="row">
+       <div class="col-md-4 img-col all  free">
+         <div class="img-box">
+         <img src="images/a.jpg" width="100%" alt="a">
+         <h5>Free</h5>
+         <p> Abstract Painting</p>
+         </div>
+       </div>
+       <div class="col-md-4 img-col all free">
+         <div class="img-box">
+         <img src="images/f.jpg" width="100%" alt="f">
+         <h5>Free</h5>
+         <p> Abstract Painting</p>
+         </div>
+        
+       </div>
+       <div class="col-md-4 img-col all free"> 
+          <div class="img-box">
+         <img src="images/c.jpg" width="100%" alt="c">
+         <h5>Free</h5>
+         <p> Abstract Painting</p>
+         </div>
+  
+       </div>
+      </div>
+
+      <div class="row">
+       <div class="col-md-4 img-col all paid">
+         <div class="img-box">
+         <img src="images/d.jpg" width="100%" alt="d">
+         <h5>Paid</h5>
+         <p> Abstract Painting</p>
+         </div>
+       </div>
+       <div class="col-md-4 img-col all paid">
+         <div class="img-box">
+         <img src="images/e.jpg" width="100%" alt="e">
+         <h5>Paid</h5>
+         <p> Abstract Painting</p>
+         </div>
+        
+       </div>
+       <div class="col-md-4 img-col all paid">
+          <div class="img-box">
+         <img src="images/b.jpg" width="100%" alt="b">
+         <h5>Paid</h5>
+         <p> Abstract Painting</p>
+         </div>
+  
+       </div>
+      </div>
+    </div>
+</div>
+<!--end data filter-->
+<script>
+  $(document).ready(function(){
+    $(".btn").each(function(){
+      $(this).click(function(){
+        var filter = $(this).data("filter");
+        $(".all").each(function(){
+          $(this).hide();
+          $("."+filter).each(function(){
+           $(this).show(500);
+          });
+        });
+      });
+    });
+  });
+</script>
+</body>
+</html>
